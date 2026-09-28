@@ -23,13 +23,14 @@ GROUP BY r.region;
 SELECT
     r.reseller_name,
     r.reseller_id,
+    r.region,
     SUM(o.quantity * o.unit_price) AS total_spend
 FROM orders o
 INNER JOIN resellers r
 ON o.reseller_id = r.reseller_id
-GROUP BY r.reseller_name, r.reseller_id
+GROUP BY r.reseller_name, r.reseller_id, r.region
 ORDER BY total_spend DESC
-LIMIT 1;
+LIMIT 5;
 
 --Reseller who have never placed order
 SELECT

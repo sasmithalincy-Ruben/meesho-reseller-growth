@@ -1,2 +1,6 @@
-reseller_name,reseller_id,total_spend
-Mumbai Reseller 1,RS019,75295.09
+reseller_name,reseller_id,region,total_spend
+Mumbai Reseller 1,RS019,West,75295.09
+Mumbai Reseller 4,RS022,West,73882.33
+Hyderabad Reseller 6,RS012,South,69936.46
+Lucknow Reseller 6,RS006,North,64238.97
+Jaipur Reseller 5,RS005,North,61825.020000000004
