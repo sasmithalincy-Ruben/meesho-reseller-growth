@@ -162,7 +162,11 @@ def run(month: str, previous_month_csv: str, current_month_csv: str) -> dict:
         "action_taken": "drafted_and_held_for_approval",
     }
 
-
 if __name__ == "__main__":
+    result = run(
+        "June",
+        "part4_agent/fixtures/may.csv",
+        "part4_agent/fixtures/june.csv"
+    )
 
-    print("Mock Agent Runner loaded successfully.")
+    print(json.dumps(result, indent=2))
