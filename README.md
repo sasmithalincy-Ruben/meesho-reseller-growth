@@ -2,16 +2,16 @@
 
 ## Project Overview
 
-This project builds an end-to-end, guarded workflow for monitoring reseller category revenue changes.
+This project builds an end-to-end guarded workflow for monitoring Meesho reseller category revenue changes.
 
 The workflow moves through:
 
 1. SQL-based business analysis
-2. Python validation and growth detection
+2. Python validation and month-on-month growth detection
 3. Reliable narrative generation and data masking
 4. A mock agent workflow that combines the previous parts
 
-The complete pipeline runs locally without external APIs or API keys.
+The complete pipeline runs locally with zero API keys and no external API calls.
 
 ---
 
